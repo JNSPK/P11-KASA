@@ -1,18 +1,20 @@
 .banner {
   display: flex;
   position: relative;
-  border-radius: 15px;
-  height: 10rem;
+  border-radius: 25px;
+  height: 15rem;
   overflow: hidden;
-  background-color: pink;
 }
 .banner img {
   object-fit: cover;
   width: 100%;
 }
 .slogan {
+  color: hsla(0, 0%, 100%, 1);
+  font-size: 48px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-shadow: 0px 0px 1px black;
 }

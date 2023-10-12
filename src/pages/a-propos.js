@@ -1,14 +1,14 @@
 import Banner from '../components/banner';
 import '../styles/accueil.css';
-import img from '../img/banner1.jpg';
+import img from '../img/banner2.jpg';
 
-function Accueil() {
+function APropos() {
   return (
     <div className='container-app'>
-      <Banner src={img} txt='Chez vous, partout et ailleurs' />
+      <Banner src={img} txt='' />
       <p>Hello React 😁👌</p>
     </div>
   );
 }
 
-export default Accueil;
+export default APropos;
