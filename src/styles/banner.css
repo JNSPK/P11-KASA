@@ -1,0 +1,18 @@
+.banner {
+  display: flex;
+  position: relative;
+  border-radius: 15px;
+  height: 10rem;
+  overflow: hidden;
+  background-color: pink;
+}
+.banner img {
+  object-fit: cover;
+  width: 100%;
+}
+.slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
