@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import Error from './pages/error404';
 import Header from './components/header';
 import Footer from './components/footer';
+import APropos from './pages/a-propos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
       <Header />
       <Routes>
         <Route path='/' element={<Accueil />}></Route>
+        <Route path='/a-propos' element={<APropos />}></Route>
         <Route path='*' element={<Error />}></Route>
       </Routes>
       <Footer />
