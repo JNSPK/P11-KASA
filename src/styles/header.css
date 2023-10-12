@@ -3,10 +3,8 @@
   justify-content: space-between;
   position: sticky;
   top: 0;
-  padding-left: 3rem;
-  padding-top: 2rem;
-  height: 15%;
-  width: 100%;
+  padding: 3rem;
+  max-height: 10%;
 }
 
 .logo {
@@ -15,7 +13,7 @@
 
 .navbar {
   display: flex;
-  padding-right: 3rem;
+  align-items: center;
   gap: 1rem;
   color: hsla(0, 100%, 69%, 1);
 }
