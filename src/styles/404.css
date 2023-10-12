@@ -9,12 +9,12 @@
   align-items: center;
   justify-content: center;
 }
-h1 {
+.title {
   font-size: 288px;
   font-weight: 700;
   color: hsla(0, 100%, 69%, 1);
 }
-p {
+.infos {
   font-size: 36px;
   font-weight: 500;
   color: hsla(0, 100%, 69%, 1);
