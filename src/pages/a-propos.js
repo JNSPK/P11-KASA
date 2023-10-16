@@ -1,5 +1,5 @@
 import Banner from '../components/banner';
-import '../styles/accueil.css';
+import '../styles/a-propos.css';
 import img from '../img/banner2.jpg';
 
 function APropos() {
