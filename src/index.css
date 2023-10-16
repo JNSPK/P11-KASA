@@ -3,16 +3,20 @@
   src: local('Montserrat'),
     url(./font/Montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: Montserrat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-#root {
   height: 100svh;
   width: 100svw;
 }
+
 code {
   font-family: Montserrat;
 }

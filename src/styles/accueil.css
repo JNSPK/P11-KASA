@@ -1,7 +1,19 @@
 .container-app {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  padding: 0 10%;
-  height: 70%;
+  padding: 2rem 10%;
+  gap: 3rem;
+}
+
+.cards-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  width: 100%;
+  gap: 3rem;
+  padding: 3rem 3rem;
+  background-color: hsla(0, 0%, 97%, 1);
+  border-radius: 25px;
+  z-index: -1;
 }
