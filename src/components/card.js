@@ -1,11 +1,16 @@
+import { Link } from 'react-router-dom';
 import '../styles/card.css';
+
 const Card = ({ logements }) => {
-  // Utilisez les données passées en tant que props pour afficher les cartes
+  // Utilisation des données passées en props pour afficher les cartes
   return (
-    <div className='card'>
-      <img src={logements.cover} alt='descriptive'></img>
-      <h2 className='card-title'>{logements.title}</h2>
-    </div>
+    // Composant Link pour créer un lien vers la page de détails du logement
+    <Link to={`/logement/${logements.id}`} className='card-link'>
+      <div className='card'>
+        <img src={logements.cover} alt='descriptive' />
+        <h2 className='card-title'>{logements.title}</h2>
+      </div>
+    </Link>
   );
 };
 

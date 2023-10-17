@@ -25,3 +25,6 @@
   color: white;
   box-shadow: inset 0px -35px 20px -2px rgba(0, 0, 0, 0.25);
 }
+.card-link {
+  cursor: pointer;
+}
