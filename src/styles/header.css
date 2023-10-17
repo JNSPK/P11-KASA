@@ -1,6 +1,37 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: sticky;
   top: 0;
-  padding: 2rem;
-  height: 15%;
+  height: 10%;
+  width: 100%;
+  padding: 3rem;
+  background-color: hsla(0, 0%, 100%, 1);
+}
+
+.logo {
+  height: 3rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+  color: hsla(0, 100%, 69%, 1);
+}
+a {
+  text-decoration: none;
+}
+a.pending {
+  text-decoration: none;
+}
+a.active {
+  color: hsla(0, 100%, 69%, 1);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: hsla(0, 100%, 69%, 1);
 }
