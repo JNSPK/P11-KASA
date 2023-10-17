@@ -7,8 +7,6 @@
   width: 100%;
   min-height: 10rem;
   max-height: 20%;
-  position: absolute;
-  bottom: 0;
   gap: 1rem;
 }
 .footerInfos {
