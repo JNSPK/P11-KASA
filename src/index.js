@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
-import App from './App';
+import Accueil from './pages/accueil';
 import reportWebVitals from './reportWebVitals';
 import Error from './pages/error404';
 import Header from './components/header';
 import Footer from './components/footer';
+import APropos from './pages/a-propos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +15,8 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        <Route path='/' element={<App />}></Route>
+        <Route path='/' element={<Accueil />}></Route>
+        <Route path='/a-propos' element={<APropos />}></Route>
         <Route path='*' element={<Error />}></Route>
       </Routes>
       <Footer />

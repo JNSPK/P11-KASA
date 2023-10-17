@@ -14,7 +14,7 @@ function Header() {
           className={({ isActive, isPending }) =>
             isPending ? 'pending' : isActive ? 'active' : ''
           }>
-          Acceuil
+          Accueil
         </NavLink>
         <NavLink
           to='/a-propos'

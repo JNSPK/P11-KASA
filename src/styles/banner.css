@@ -1,0 +1,23 @@
+.banner {
+  display: flex;
+  position: relative;
+  border-radius: 25px;
+  height: 15rem;
+  overflow: hidden;
+  z-index: -1;
+  text-align: center;
+  /* box-shadow: inset 0px -50px 20px 0px rgba(0, 0, 0, 1); */
+}
+.banner img {
+  object-fit: cover;
+  width: 100%;
+  filter: brightness(85%);
+}
+.slogan {
+  color: hsla(0, 0%, 100%, 1);
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
