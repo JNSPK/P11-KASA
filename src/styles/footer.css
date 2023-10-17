@@ -6,7 +6,7 @@
   background-color: black;
   width: 100%;
   min-height: 10rem;
-  max-height: 20%;
+  height: 20%;
   gap: 1rem;
 }
 .footerInfos {
