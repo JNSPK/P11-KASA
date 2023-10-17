@@ -16,6 +16,9 @@ body {
   height: 100svh;
   width: 100svw;
 }
+#root {
+  height: 100%;
+}
 
 code {
   font-family: Montserrat;
