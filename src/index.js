@@ -8,6 +8,7 @@ import Error from './pages/error404';
 import Header from './components/header';
 import Footer from './components/footer';
 import APropos from './pages/a-propos';
+import DetailsLogement from './pages/details-logement';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,7 @@ root.render(
         <Route path='/' element={<Accueil />}></Route>
         <Route path='/a-propos' element={<APropos />}></Route>
         <Route path='*' element={<Error />}></Route>
+        <Route path='/logement/:id' element={<DetailsLogement />}></Route>
       </Routes>
       <Footer />
     </Router>
