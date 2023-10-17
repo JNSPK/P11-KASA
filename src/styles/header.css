@@ -1,10 +1,13 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: sticky;
   top: 0;
+  height: 10%;
+  width: 100%;
   padding: 3rem;
-  max-height: 10%;
+  background-color: hsla(0, 0%, 100%, 1);
 }
 
 .logo {
@@ -14,6 +17,7 @@
 .navbar {
   display: flex;
   align-items: center;
+
   gap: 1rem;
   color: hsla(0, 100%, 69%, 1);
 }
