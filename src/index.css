@@ -16,7 +16,10 @@ body {
   height: 100svh;
   width: 100svw;
 }
-
+#root {
+  min-height: 100%;
+  position: relative;
+}
 code {
   font-family: Montserrat;
 }
