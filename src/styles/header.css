@@ -6,19 +6,20 @@
   top: 0;
   height: 10%;
   width: 100%;
-  padding: 3rem;
+  padding: 5rem 6rem;
   background-color: hsla(0, 0%, 100%, 1);
+  z-index: 2;
+  font-size: 24px;
 }
 
 .logo {
-  height: 3rem;
+  height: 4rem;
 }
 
 .navbar {
   display: flex;
   align-items: center;
-
-  gap: 1rem;
+  gap: 2rem;
   color: hsla(0, 100%, 69%, 1);
 }
 a {
