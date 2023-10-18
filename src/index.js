@@ -12,18 +12,16 @@ import DetailsLogement from './pages/details-logement';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Router>
-      <Header />
-      <Routes>
-        <Route path='/' element={<Accueil />}></Route>
-        <Route path='/a-propos' element={<APropos />}></Route>
-        <Route path='*' element={<Error />}></Route>
-        <Route path='/logement/:id' element={<DetailsLogement />}></Route>
-      </Routes>
-      <Footer />
-    </Router>
-  </React.StrictMode>
+  <Router>
+    <Header />
+    <Routes>
+      <Route path='/' element={<Accueil />}></Route>
+      <Route path='/a-propos' element={<APropos />}></Route>
+      <Route path='*' element={<Error />}></Route>
+      <Route path='/logement/:id' element={<DetailsLogement />}></Route>
+    </Routes>
+    <Footer />
+  </Router>
 );
 
 // If you want to start measuring performance in your app, pass a function

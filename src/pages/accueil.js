@@ -17,7 +17,6 @@ const Accueil = () => {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         if (data !== undefined) {
           setLogements(data);
         } else {
@@ -33,14 +32,16 @@ const Accueil = () => {
   }, []);
 
   return (
-    <div className='container-app'>
-      <Banner src={img} txt='Chez vous, partout et ailleurs' />
-      <section className='cards-container'>
-        {logements.map((item, index) => (
-          <Card key={index} logements={item} />
-        ))}
-      </section>
-    </div>
+    logements && (
+      <div className='container-app'>
+        <Banner src={img} txt='Chez vous, partout et ailleurs' />
+        <section className='cards-container'>
+          {logements.map((item, index) => (
+            <Card key={index} logements={item} />
+          ))}
+        </section>
+      </div>
+    )
   );
 };
 
