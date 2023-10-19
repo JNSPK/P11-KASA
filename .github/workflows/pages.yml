@@ -31,7 +31,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: lts
+          node-version: 'lts'
           cache: yarn
       - name: Install Yarn@1.22.19
         run: |
