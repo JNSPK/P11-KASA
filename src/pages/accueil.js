@@ -8,7 +8,7 @@ const Accueil = () => {
   const [logements, setLogements] = useState([]);
 
   useEffect(() => {
-    fetch(`%PUBLIC_URL%/logements.json`)
+    fetch(`${process.env.PUBLIC_URL}/logements.json`)
       .then((response) => {
         console.log(response);
         if (!response.ok) {
