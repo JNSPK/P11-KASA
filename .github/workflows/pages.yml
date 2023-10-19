@@ -33,10 +33,10 @@ jobs:
         with:
           node-version: 'latest'
           cache: yarn
-      - name: Install Yarn@stable
+      - name: Install Yarn@1.22.19
         run: |
           corepack enable
-          corepack prepare yarn@stable --activate
+          corepack prepare yarn@1.22.19 --activate
           yarn --version
       - name: Install dependencies
         run: yarn install
