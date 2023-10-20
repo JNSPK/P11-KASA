@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import '../styles/details-logement.css';
 import Carousel from '../components/carousel';
+import Dropdown from '../components/dropdown';
 
 const DetailsLogement = () => {
   const { id } = useParams(); // Obtention de l'ID du logement depuis l'URL
@@ -17,7 +18,6 @@ const DetailsLogement = () => {
       })
       .then((data) => {
         const logementData = data.find((logement) => logement.id === id);
-        console.log(logementData);
         if (logementData) {
           setLogement(logementData);
         } else {
@@ -36,9 +36,29 @@ const DetailsLogement = () => {
   return (
     <div className='container-app'>
       <Carousel data={logement} />
-
-      <h2>{logement.title}</h2>
-      <p>{logement.description}</p>
+      <section className='details-container'>
+        <section className='loueur-localisation-details'>
+          <section className='titre-localisation'>
+            <h2 className='titre-detail'>{logement.title}</h2>
+            <p className='localisation'>{logement.location}</p>
+          </section>
+          <section className='loueur'>
+            <p className='loueur-nom'>{logement.host.name}</p>
+            <img
+              className='loueur-image'
+              src={logement.host.picture}
+              alt='host'></img>
+          </section>
+        </section>
+        <section className='dropdowns-container'>
+          <Dropdown txt={logement.description} title='Description'></Dropdown>
+          <Dropdown
+            txt={logement.equipments.map((name) => (
+              <li key={name}> {name} </li>
+            ))}
+            title='Equipements'></Dropdown>
+        </section>
+      </section>
     </div>
   );
 };
