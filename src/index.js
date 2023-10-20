@@ -12,7 +12,7 @@ import DetailsLogement from './pages/details-logement';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router basename={process.env.PUBLIC_URL}>
+  <Router>
     <Header />
     <Routes>
       <Route path='/' element={<Accueil />}></Route>
