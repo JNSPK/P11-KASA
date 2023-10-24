@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import '../styles/details-logement.css';
 import Carousel from '../components/carousel';
 import Dropdown from '../components/dropdown';
@@ -8,6 +8,7 @@ import Note from '../components/note';
 const DetailsLogement = () => {
   const { id } = useParams(); // Obtention de l'ID du logement depuis l'URL
   const [logement, setLogement] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`${process.env.PUBLIC_URL}/logements.json`)
@@ -23,12 +24,14 @@ const DetailsLogement = () => {
           setLogement(logementData);
         } else {
           console.error('Logement not found');
+          // Redirection vers la page 404 si l'ID du logement n'existe pas
+          navigate('/error');
         }
       })
       .catch((error) => {
         console.error('Error fetching logement data:', error);
       });
-  }, [id]);
+  }, [id, navigate]);
 
   if (!logement) {
     return <div>Chargement des détails du logement...</div>;
