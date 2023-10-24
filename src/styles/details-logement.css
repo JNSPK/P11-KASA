@@ -17,6 +17,9 @@
   display: flex;
   justify-content: space-between;
 }
+.dropdowns-container .dropdown {
+  width: 35rem;
+}
 .loueur-localisation-details,
 .tag-note {
   display: flex;
