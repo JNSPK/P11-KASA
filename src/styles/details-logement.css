@@ -17,7 +17,8 @@
   display: flex;
   justify-content: space-between;
 }
-.loueur-localisation-details {
+.loueur-localisation-details,
+.tag-note {
   display: flex;
   justify-content: space-between;
 }
@@ -42,4 +43,18 @@
   max-width: 4rem;
   max-height: 4rem;
   border-radius: 50%;
+}
+.tags-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.tags {
+  display: flex;
+  height: 1.5rem;
+  color: white;
+  background-color: hsla(0, 100%, 69%, 1);
+  border-radius: 10px;
+  padding: 0 3rem;
+  align-items: center;
 }

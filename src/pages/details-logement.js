@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import '../styles/details-logement.css';
 import Carousel from '../components/carousel';
 import Dropdown from '../components/dropdown';
+import Note from '../components/note';
 
 const DetailsLogement = () => {
   const { id } = useParams(); // Obtention de l'ID du logement depuis l'URL
@@ -49,6 +50,18 @@ const DetailsLogement = () => {
               src={logement.host.picture}
               alt='host'></img>
           </section>
+        </section>
+        <section className='tag-note'>
+          <article className='tags-container'>
+            {logement.tags.map((tag) => (
+              <li key={tag} className='tags'>
+                {tag}
+              </li>
+            ))}
+          </article>
+          <article className='note'>
+            <Note score={logement.rating} />
+          </article>
         </section>
         <section className='dropdowns-container'>
           <Dropdown txt={logement.description} title='Description'></Dropdown>
