@@ -41,30 +41,33 @@ const DetailsLogement = () => {
     <div className='container-app'>
       <Carousel data={logement} />
       <section className='details-container'>
-        <section className='loueur-localisation-details'>
-          <section className='titre-localisation'>
-            <h2 className='titre-detail'>{logement.title}</h2>
-            <p className='localisation'>{logement.location}</p>
+        <section className='details-container-infos'>
+          <section className='localisation-tags'>
+            <section className='titre-localisation'>
+              <h2 className='titre-detail'>{logement.title}</h2>
+              <p className='localisation'>{logement.location}</p>
+            </section>
+            <article className='tags-container'>
+              {logement.tags.map((tag) => (
+                <li key={tag} className='tags'>
+                  {tag}
+                </li>
+              ))}
+            </article>
           </section>
-          <section className='loueur'>
-            <p className='loueur-nom'>{logement.host.name}</p>
-            <img
-              className='loueur-image'
-              src={logement.host.picture}
-              alt='host'></img>
+          <section className='loueur-note'>
+            {' '}
+            <section className='loueur'>
+              <p className='loueur-nom'>{logement.host.name}</p>
+              <img
+                className='loueur-image'
+                src={logement.host.picture}
+                alt='host'></img>
+            </section>
+            <article className='note'>
+              <Note score={logement.rating} />
+            </article>
           </section>
-        </section>
-        <section className='tag-note'>
-          <article className='tags-container'>
-            {logement.tags.map((tag) => (
-              <li key={tag} className='tags'>
-                {tag}
-              </li>
-            ))}
-          </article>
-          <article className='note'>
-            <Note score={logement.rating} />
-          </article>
         </section>
         <section className='dropdowns-container'>
           <Dropdown txt={logement.description} title='Description'></Dropdown>

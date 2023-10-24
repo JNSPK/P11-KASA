@@ -19,3 +19,21 @@
   background-color: hsla(0, 0%, 97%, 1);
   border-radius: 25px;
 }
+
+@media (max-width: 640px) {
+  .container-app {
+    padding: 0 1.5rem 2rem;
+    gap: 2rem;
+  }
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 25px;
+  }
+}

@@ -23,3 +23,13 @@ body {
 code {
   font-family: Montserrat;
 }
+
+@media (max-width: 640px) {
+  #root {
+    height: 100%;
+  }
+  body {
+    height: 100svh;
+    width: 100svw;
+  }
+}

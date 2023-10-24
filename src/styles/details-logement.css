@@ -4,6 +4,9 @@
   gap: 1rem;
   width: 100%;
 }
+.details-container-infos {
+  display: flex;
+}
 .titre-detail {
   color: hsla(0, 100%, 69%, 1);
   font-size: 36px;
@@ -21,14 +24,26 @@
 .dropdowns-container .dropdown {
   width: 35rem;
 }
-.loueur-localisation-details,
-.tag-note {
+.localisation-tags {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+}
+.localisation-tags {
+  gap: 2rem;
+  width: 50%;
 }
 .titre-localisation {
   display: flex;
   flex-direction: column;
+}
+.loueur-note {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 50%;
+  gap: 1.5rem;
 }
 .loueur {
   width: 10rem;
@@ -61,4 +76,42 @@
   border-radius: 10px;
   padding: 0 3rem;
   align-items: center;
+}
+
+@media (max-width: 640px) {
+  .dropdowns-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .dropdowns-container .dropdown {
+    width: 100%;
+  }
+  .details-container-infos,
+  .note {
+    flex-direction: column;
+  }
+  .details-container-infos {
+    gap: 1rem;
+  }
+  .localisation-tags {
+    gap: 2rem;
+    width: 100%;
+  }
+  .loueur-note {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .star {
+    height: 1.5rem;
+  }
+  .tags-container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .tags {
+    font-size: 10px;
+  }
 }

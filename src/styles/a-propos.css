@@ -1,3 +1,11 @@
 .container-app .dropdown {
   width: 80%;
 }
+@media (max-width: 640px) {
+  .container-app {
+    min-height: 75%;
+  }
+  .container-app .dropdown {
+    width: 100%;
+  }
+}

@@ -33,7 +33,7 @@ const Accueil = () => {
   return (
     logements && (
       <div className='container-app'>
-        <Banner src={img} txt='Chez vous, partout et ailleurs' />
+        <Banner src={img} />
         <section className='cards-container'>
           {logements.map((item, index) => (
             <Card key={index} logements={item} />

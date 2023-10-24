@@ -15,3 +15,11 @@
   color: white;
   font-size: 24px;
 }
+@media (max-width: 640px) {
+  .footerInfos {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    width: 6rem;
+  }
+}
