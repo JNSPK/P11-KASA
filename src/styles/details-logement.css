@@ -97,6 +97,9 @@
     gap: 2rem;
     width: 100%;
   }
+  .titre-detail {
+    font-size: 18px;
+  }
   .loueur-note {
     display: flex;
     flex-direction: row-reverse;
