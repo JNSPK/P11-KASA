@@ -21,7 +21,8 @@
   gap: 2rem;
   color: hsla(0, 100%, 69%, 1);
 }
-a {
+.navbar a {
+  color: hsla(0, 100%, 69%, 1);
   text-decoration: none;
 }
 a.pending {
@@ -46,7 +47,7 @@ a:visited {
   .logo {
     height: 2.5rem;
   }
-  a {
+  .navbar a {
     text-transform: uppercase;
   }
 }
