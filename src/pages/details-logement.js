@@ -36,7 +36,6 @@ const DetailsLogement = () => {
   if (!logement) {
     return <div>Chargement des détails du logement...</div>;
   }
-  console.log(logement);
   return (
     <div className='container-app'>
       <Carousel data={logement} />
