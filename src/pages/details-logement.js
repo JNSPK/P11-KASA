@@ -78,45 +78,6 @@ const DetailsLogement = () => {
             title='Equipements'></Dropdown>
         </section>
       </section>
-      <Carousel data={logement} />
-      <section className='details-container'>
-        <section className='details-container-infos'>
-          <section className='localisation-tags'>
-            <section className='titre-localisation'>
-              <h2 className='titre-detail'>{logement.title}</h2>
-              <p className='localisation'>{logement.location}</p>
-            </section>
-            <article className='tags-container'>
-              {logement.tags.map((tag) => (
-                <li key={tag} className='tags'>
-                  {tag}
-                </li>
-              ))}
-            </article>
-          </section>
-          <section className='loueur-note'>
-            {' '}
-            <section className='loueur'>
-              <p className='loueur-nom'>{logement.host.name}</p>
-              <img
-                className='loueur-image'
-                src={logement.host.picture}
-                alt='host'></img>
-            </section>
-            <article className='note'>
-              <Note score={logement.rating} />
-            </article>
-          </section>
-        </section>
-        <section className='dropdowns-container'>
-          <Dropdown txt={logement.description} title='Description'></Dropdown>
-          <Dropdown
-            txt={logement.equipments.map((name) => (
-              <li key={name}> {name} </li>
-            ))}
-            title='Equipements'></Dropdown>
-        </section>
-      </section>
     </div>
   );
 };
