@@ -11,7 +11,7 @@ const DetailsLogement = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`${process.env.PUBLIC_URL}logements.json`)
+    fetch(`${process.env.PUBLIC_URL}/logements.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
