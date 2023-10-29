@@ -33,3 +33,13 @@ code {
     width: 100svw;
   }
 }
+
+@media (min-width: 641px) and (max-width: 1080px) {
+  #root {
+    height: 100%;
+  }
+  body {
+    height: 100svh;
+    width: 100svw;
+  }
+}

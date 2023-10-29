@@ -37,3 +37,20 @@
     border-radius: 25px;
   }
 }
+@media (min-width: 641px) and (max-width: 1200px) {
+  .container-app {
+    padding: 0 2.5rem 2rem;
+    gap: 2rem;
+  }
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 25px;
+  }
+}

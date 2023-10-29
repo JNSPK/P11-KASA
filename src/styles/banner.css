@@ -40,3 +40,14 @@
     display: block;
   }
 }
+@media (min-width: 641px) and (max-width: 1200px) {
+  .banner {
+    height: 8rem;
+  }
+  .slogan {
+    font-size: 2rem;
+    width: 80%;
+
+    text-align: center;
+  }
+}
