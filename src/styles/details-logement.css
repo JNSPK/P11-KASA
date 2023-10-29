@@ -36,6 +36,7 @@
 .titre-localisation {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 .loueur-note {
   display: flex;
@@ -70,7 +71,7 @@
 }
 .tags {
   display: flex;
-  height: 1.5rem;
+  height: 2rem;
   color: white;
   background-color: hsla(0, 100%, 69%, 1);
   border-radius: 10px;
@@ -98,7 +99,10 @@
     width: 100%;
   }
   .titre-detail {
-    font-size: 18px;
+    font-size: 20px;
+  }
+  .localisation {
+    font-size: 14px;
   }
   .loueur-note {
     display: flex;
@@ -115,6 +119,7 @@
     flex-wrap: wrap;
   }
   .tags {
+    height: 1.5rem;
     font-size: 10px;
   }
 }
@@ -135,7 +140,7 @@
     width: 100%;
   }
   .titre-detail {
-    font-size: 18px;
+    font-size: 24px;
   }
   .loueur-note {
     display: flex;
@@ -150,9 +155,6 @@
   .tags-container {
     width: 100%;
     flex-wrap: wrap;
-  }
-  .tags {
-    font-size: 10px;
   }
 }
 
@@ -172,7 +174,7 @@
     width: 100%;
   }
   .titre-detail {
-    font-size: 18px;
+    font-size: 36px;
   }
   .loueur-note {
     display: flex;
@@ -185,8 +187,5 @@
   .tags-container {
     width: 100%;
     flex-wrap: wrap;
-  }
-  .tags {
-    font-size: 10px;
   }
 }
