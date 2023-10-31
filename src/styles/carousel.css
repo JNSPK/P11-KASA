@@ -75,4 +75,7 @@
   .arrow-right {
     height: 3rem;
   }
+  .index {
+    display: none;
+  }
 }
