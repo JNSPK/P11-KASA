@@ -1,3 +1,9 @@
-Project 11 from OpenClassRooms Front-end course.
+# KASA
 
-Kasa, React app
+## Objectif
+
+Mise en place d'un site vitrine de location d'appartements en React
+
+##
+- React.JS
+- CSS
